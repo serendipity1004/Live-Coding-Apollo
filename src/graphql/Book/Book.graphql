@@ -1,0 +1,11 @@
+type Book {
+    title: String!
+    author: String!
+}
+
+type Query {
+    ## Get Book Function
+    ##
+    ##
+    getBook(title:String!) : [Book]
+}

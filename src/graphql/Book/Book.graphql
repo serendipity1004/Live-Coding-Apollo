@@ -8,4 +8,21 @@ type Query {
     ##
     ##
     getBook(title:String!) : [Book]
+
+    ##
+    ##
+    ##
+    getAllBooks : [Book]
+}
+
+input addBookInput {
+    title:String!
+    author:String!
+}
+
+type Mutation {
+    ## Add Book
+    ##
+    ##
+    addBook(input:addBookInput!): Book
 }

@@ -12,4 +12,4 @@ const server = new ApolloServer({
     resolvers: resolver
 });
 
-server.listen(3000).then(({url}) => console.log(`server has started at ${url}`));
+server.listen(4000).then(({url}) => console.log(`server has started at ${url}`));
